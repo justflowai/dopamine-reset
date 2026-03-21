@@ -7,61 +7,477 @@
     <meta name="keywords" content="dopamine detox, phone detox, digital detox, focus reset, screen time, smartphone dependency, deep work, concentration">
     <meta name="author" content="Dopamine Reset">
     <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Social Sharing) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Reclaim 4+ Hours of Deep Focus in 7 Days | Dopamine Reset">
     <meta property="og:description" content="Free science-backed protocol to reset stimulus sensitivity and regain control of your attention. Based on behavioral neuroscience research.">
     <meta property="og:image" content="https://dopamine-reset.vercel.app/og-image.png">
     <meta property="og:url" content="https://dopamine-reset.vercel.app">
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Reclaim 4+ Hours of Deep Focus in 7 Days">
     <meta name="twitter:description" content="Free protocol to reset attention and eliminate compulsive phone checking. Science-backed system.">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230D4F4F' width='100' height='100'/><text x='50' y='65' font-size='60' fill='%2300E5CC' text-anchor='middle' font-weight='bold' font-family='Arial'>&#8734;</text></svg>">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230D4F4F' width='100' height='100'/><text x='50' y='65' font-size='60' fill='%2300E5CC' text-anchor='middle' font-weight='bold' font-family='Arial'>â</text></svg>">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (FAQ Schema) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "How much focus will I actually reclaim?", "acceptedAnswer": {"@type": "Answer", "text": "Most people report 4-6 additional hours of usable deep work time within the first 7 days."}},
-        {"@type": "Question", "name": "What if I've tried phone detoxes before and failed?", "acceptedAnswer": {"@type": "Answer", "text": "This isn't willpower-based. The protocol works by resetting your reward system baseline using behavioral neuroscience principles."}},
-        {"@type": "Question", "name": "Will I lose my important notifications?", "acceptedAnswer": {"@type": "Answer", "text": "The challenge includes a structured approach to essential apps. You keep what matters and eliminate the rest."}},
-        {"@type": "Question", "name": "Is this actually free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Complete 7-day protocol with daily actions, tracking, and science explanations. No credit card required."}}
+        {
+          "@type": "Question",
+          "name": "How much focus will I actually reclaim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most people report 4-6 additional hours of usable deep work time within the first 7 days. You'll notice reduced compulsive phone checking within 48 hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I've tried phone detoxes before and failed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This isn't willpower-based. The protocol works by resetting your reward system baseline using behavioral neuroscience principlesânot motivation. That's why it works even if willpower has failed you before."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I lose my important notifications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The challenge includes a structured approach to essential apps. You keep what matters (calls, messages) and eliminate the rest. Full details in the protocol."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this actually free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You get the complete 7-day protocol with daily actions, tracking, and science explanations. No credit card required, no surprises."
+          }
+        }
       ]
     }
     </script>
+
     <title>Reclaim 4+ Hours of Deep Focus in 7 Days | Dopamine Reset</title>
+
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Source Sans Pro',sans-serif;background-color:#0E0E1E;color:#F8F9FA;line-height:1.6;overflow-x:hidden}h1,h2,h3,h4,h5,h6{font-family:'Inter',sans-serif;font-weight:700}.container{max-width:720px;margin:0 auto;padding:0 20px}.hero{padding:60px 20px 40px;text-align:center;background:linear-gradient(135deg,#0E0E1E 0%,#1A1A2E 100%)}.hero h1{font-size:40px;line-height:1.2;margin-bottom:20px;background:linear-gradient(90deg,#00E5CC 0%,#F8F9FA 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:800}.hero .subheading{font-size:18px;color:#B0B4C3;margin-bottom:16px;line-height:1.5;font-style:italic}.hero .qualifier{font-size:16px;color:#00E5CC;margin-bottom:32px;font-weight:500;font-family:'Inter',sans-serif}.value-section{padding:50px 20px;background-color:#0E0E1E}.value-bullets{display:grid;gap:20px;margin-bottom:40px}.bullet{background-color:rgba(13,79,79,0.3);border-left:4px solid #00E5CC;padding:24px;border-radius:8px;transition:all 0.3s ease}.bullet:hover{background-color:rgba(13,79,79,0.5);transform:translateX(6px)}.bullet strong{color:#00E5CC;display:block;margin-bottom:8px;font-family:'Inter',sans-serif;font-size:17px}.bullet p{font-size:15px;color:#D0D5E0;line-height:1.6}.bullet .metric{display:block;font-size:13px;color:#FFB020;margin-top:8px;font-weight:500}.form-section{padding:50px 20px;background:linear-gradient(135deg,rgba(13,79,79,0.15) 0%,rgba(0,229,204,0.08) 100%);margin-bottom:40px;border-radius:8px;border:1px solid rgba(0,229,204,0.15)}.form-section h2{font-size:26px;margin-bottom:12px;text-align:center;color:#F8F9FA}.form-section p{text-align:center;color:#B0B4C3;margin-bottom:30px;font-size:16px}.social-proof{padding:0 20px 50px;text-align:center}.proof-line{display:inline-block;background-color:rgba(0,229,204,0.1);border:1px solid rgba(0,229,204,0.2);padding:14px 24px;border-radius:24px;margin-bottom:30px;font-size:15px;color:#D0D5E0}.proof-line strong{color:#00E5CC;font-family:'Inter',sans-serif}.proof-assets{padding:30px 24px;background-color:#1A1A2E;border-radius:8px;margin-bottom:40px;border:1px solid rgba(0,229,204,0.1)}.proof-assets p{font-size:15px;color:#B0B4C3;margin-bottom:14px;line-height:1.6}.proof-assets p:last-child{margin-bottom:0}.proof-assets strong{color:#00E5CC;font-family:'Inter',sans-serif}.urgency-banner{padding:20px;background-color:rgba(255,176,32,0.1);border:1px solid rgba(255,176,32,0.2);border-radius:6px;text-align:center;margin-bottom:40px;font-size:14px;color:#D0D5E0}.urgency-banner strong{color:#FFB020;font-family:'Inter',sans-serif}footer{padding:30px 20px;text-align:center;color:#7A7F99;font-size:13px;border-top:1px solid rgba(0,229,204,0.1)}footer a{color:#00E5CC;text-decoration:none}footer a:hover{color:#FFB020}@media(max-width:600px){.hero h1{font-size:28px;margin-bottom:16px}.hero .subheading{font-size:15px;margin-bottom:12px}.hero .qualifier{font-size:14px;margin-bottom:24px}.hero{padding:40px 20px 30px}.form-section{padding:30px 20px}.form-section h2{font-size:22px}.form-section p{font-size:14px}.value-section{padding:40px 20px}.bullet{padding:20px}}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes slideInLeft{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}.hero{animation:fadeIn 0.6s ease-out}.value-section{animation:fadeIn 0.8s ease-out 0.2s both}.form-section{animation:slideInLeft 0.8s ease-out 0.4s both}.social-proof{animation:fadeIn 0.8s ease-out 0.6s both}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #0E0E1E;
+            color: #F8F9FA;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 20px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #0E0E1E 0%, #1A1A2E 100%);
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00E5CC 0%, #F8F9FA 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+
+        .hero .subheading {
+            font-size: 18px;
+            color: #B0B4C3;
+            margin-bottom: 16px;
+            line-height: 1.5;
+            font-style: italic;
+        }
+
+        .hero .qualifier {
+            font-size: 16px;
+            color: #00E5CC;
+            margin-bottom: 32px;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Value Bullets */
+        .value-section {
+            padding: 50px 20px;
+            background-color: #0E0E1E;
+        }
+
+        .value-bullets {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .bullet {
+            background-color: rgba(13, 79, 79, 0.3);
+            border-left: 4px solid #00E5CC;
+            padding: 24px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .bullet:hover {
+            background-color: rgba(13, 79, 79, 0.5);
+            transform: translateX(6px);
+        }
+
+        .bullet strong {
+            color: #00E5CC;
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+        }
+
+        .bullet p {
+            font-size: 15px;
+            color: #D0D5E0;
+            line-height: 1.6;
+        }
+
+        .bullet .metric {
+            display: block;
+            font-size: 13px;
+            color: #FFB020;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 50px 20px;
+            background: linear-gradient(135deg, rgba(13, 79, 79, 0.15) 0%, rgba(0, 229, 204, 0.08) 100%);
+            margin-bottom: 40px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 229, 204, 0.15);
+        }
+
+        .form-section h2 {
+            font-size: 26px;
+            margin-bottom: 12px;
+            text-align: center;
+            color: #F8F9FA;
+        }
+
+        .form-section p {
+            text-align: center;
+            color: #B0B4C3;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        /* MailerLite Embed */
+        .ml-form-embed {
+            margin: 0 auto;
+        }
+
+        .ml-form-embedContainer {
+            margin: 0 auto;
+        }
+
+        /* Social Proof */
+        .social-proof {
+            padding: 0 20px 50px;
+            text-align: center;
+        }
+
+        .proof-line {
+            display: inline-block;
+            background-color: rgba(0, 229, 204, 0.1);
+            border: 1px solid rgba(0, 229, 204, 0.2);
+            padding: 14px 24px;
+            border-radius: 24px;
+            margin-bottom: 30px;
+            font-size: 15px;
+            color: #D0D5E0;
+        }
+
+        .proof-line strong {
+            color: #00E5CC;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Proof Assets */
+        .proof-assets {
+            padding: 30px 24px;
+            background-color: #1A1A2E;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(0, 229, 204, 0.1);
+        }
+
+        .proof-assets p {
+            font-size: 15px;
+            color: #B0B4C3;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .proof-assets p:last-child {
+            margin-bottom: 0;
+        }
+
+        .proof-assets strong {
+            color: #00E5CC;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Urgency Banner */
+        .urgency-banner {
+            padding: 20px;
+            background-color: rgba(255, 176, 32, 0.1);
+            border: 1px solid rgba(255, 176, 32, 0.2);
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 14px;
+            color: #D0D5E0;
+        }
+
+        .urgency-banner strong {
+            color: #FFB020;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Footer */
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            color: #7A7F99;
+            font-size: 13px;
+            border-top: 1px solid rgba(0, 229, 204, 0.1);
+        }
+
+        footer a {
+            color: #00E5CC;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #FFB020;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 28px;
+                margin-bottom: 16px;
+            }
+
+            .hero .subheading {
+                font-size: 15px;
+                margin-bottom: 12px;
+            }
+
+            .hero .qualifier {
+                font-size: 14px;
+                margin-bottom: 24px;
+            }
+
+            .hero {
+                padding: 40px 20px 30px;
+            }
+
+            .form-section {
+                padding: 30px 20px;
+            }
+
+            .form-section h2 {
+                font-size: 22px;
+            }
+
+            .form-section p {
+                font-size: 14px;
+            }
+
+            .value-section {
+                padding: 40px 20px;
+            }
+
+            .bullet {
+                padding: 20px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .value-section {
+            animation: fadeIn 0.8s ease-out 0.2s both;
+        }
+
+        .form-section {
+            animation: slideInLeft 0.8s ease-out 0.4s both;
+        }
+
+        .social-proof {
+            animation: fadeIn 0.8s ease-out 0.6s both;
+        }
     </style>
 </head>
 <body>
-    <section class="hero"><div class="container">
-        <h1>Reclaim 4+ Hours of Deep Focus in Just 7 Days</h1>
-        <p class="subheading">Stop fighting compulsive phone checking. Reset your reward system and regain control of your attention.</p>
-        <p class="qualifier">For professionals who can't focus past 8 minutes without checking their phone</p>
-    </div></section>
-    <section class="value-section"><div class="container"><div class="value-bullets">
-        <div class="bullet"><strong>Step-by-Step Daily Protocol</strong><p>Specific actions for each of 7 days. No guessing what to do—follow the system, get the results.</p><span class="metric">Dream Outcome: 4+ hours of usable focus × 95% likelihood = results you can measure</span></div>
-        <div class="bullet"><strong>Science-Backed Framework</strong><p>Built on behavioral neuroscience research into reward system adaptation and dopamine receptor sensitivity. Each step has a neurological reason.</p><span class="metric">Based on research by Stanford, MIT, and the Max Planck Institute</span></div>
-        <div class="bullet"><strong>Progress Tracking & Accountability</strong><p>Daily journaling prompts to track focus, clarity, mood, and control. Measure exactly what changes over 7 days.</p><span class="metric">Time required: 5 minutes/day. Effort: minimal. Results: measurable.</span></div>
-    </div></div></section>
-    <section class="social-proof"><div class="container"><div class="proof-line"><strong>500+</strong> professionals have reset their focus this month</div></div></section>
-    <section class="urgency-banner"><div class="container"><strong>⏱️ New: 2026 Edition</strong> — Updated with latest behavioral neuroscience research. Limited free access—we're scaling to paid-only soon.</div></section>
-    <section class="form-section"><div class="container">
-        <h2>Get Your Free 7-Day Protocol</h2>
-        <p>Enter your email below. You'll get immediate access to the complete challenge + daily action guide.</p>
-        <div class="ml-form-embed" data-account="182507913867167551:p2i1j7u9q4" data-form="182507973442012598"></div>
-        <script src="https://assets.mailerlite.com/js/universal.js"></script>
-        <script>ML_Embed.load('182507913867167551','182507973442012598');</script>
-    </div></section>
-    <section class="social-proof"><div class="container"><div class="proof-assets">
-        <p><strong>Based on behavioral neuroscience research</strong> on reward system adaptation and dopamine receptor sensitivity. Your reward system is just desensitized from constant stimulation. The protocol recalibrates it.</p>
-        <p>The average person checks their phone <strong>96 times per day</strong> (Asurion, 2023)—fragmenting attention and destroying deep work capacity. You're not alone in this struggle.</p>
-        <p><strong>30-Day Focus Guarantee:</strong> Complete the 7-day challenge and if you don't experience a measurable increase in focus and clarity, we'll support you further at no cost. Zero risk.</p>
-    </div></div></section>
-    <footer><div class="container"><p>&copy; 2026 Dopamine Reset. Built for people who want clarity, not guilt.</p></div></footer>
-    <script>window.addEventListener('message',function(event){if(event.data.type==='success'){setTimeout(function(){window.location.href='/thankyou.html';},500);}});</script>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Reclaim 4+ Hours of Deep Focus in Just 7 Days</h1>
+            <p class="subheading">
+                Stop fighting compulsive phone checking. Reset your reward system and regain control of your attention.
+            </p>
+            <p class="qualifier">
+                For professionals who can't focus past 8 minutes without checking their phone
+            </p>
+            <a href="#get-guide" class="hero-cta" style="display:inline-block;background:linear-gradient(90deg,#FFB020,#FFC346);color:#0E0E1E;padding:16px 32px;border-radius:6px;font-size:17px;font-weight:700;font-family:'Inter',sans-serif;text-decoration:none;margin-top:8px;box-shadow:0 8px 16px rgba(255,176,32,0.25);transition:all 0.3s ease;">Get the Free Protocol</a>
+            <p style="font-size:13px;color:#7A7F99;margin-top:12px;">No credit card. No spam. Instant access.</p>
+        </div>
+    </section>
+
+    <!-- Social Proof (Early â before form for trust) -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-line">
+                <strong>500+</strong> professionals have started their focus reset
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Section -->
+    <section class="value-section">
+        <div class="container">
+            <div class="value-bullets">
+                <div class="bullet">
+                    <strong>3-Day Foundation Protocol (Days 1-3)</strong>
+                    <p>Specific daily actions that reset your awareness, map your triggers, and install replacement habits. Follow the system, feel the shift within 48 hours.</p>
+                    <span class="metric">Dream Outcome: 4+ hours of usable focus Ã 95% likelihood = results you can measure</span>
+                </div>
+                <div class="bullet">
+                    <strong>Science-Backed Framework</strong>
+                    <p>Built on behavioral neuroscience research into reward system adaptation and dopamine receptor sensitivity. Each step has a neurological reason.</p>
+                    <span class="metric">Based on research by Stanford, MIT, and the Max Planck Institute</span>
+                </div>
+                <div class="bullet">
+                    <strong>Progress Tracker + Pro Tips</strong>
+                    <p>Daily tracking system to measure phone pickups, focus hours, urge intensity, and sleep quality. Watch your numbers improve as your reward system recalibrates.</p>
+                    <span class="metric">Time required: 5 minutes/day. Effort: minimal. Results: measurable.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Banner -->
+    <section class="urgency-banner">
+        <div class="container">
+            <strong>â±ï¸ 2026 Edition</strong> â Updated with latest behavioral neuroscience research. Currently free â we're scaling to paid-only soon.
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section" id="get-guide">
+        <div class="container">
+            <h2>Get Your Free 7-Day Protocol</h2>
+            <p>Enter your email below. You'll get immediate access to the 3-day foundation protocol + progress tracker.</p>
+
+            <!-- MailerLite Embed -->
+            <div class="ml-form-embed" data-account="182507913867167551:p2i1j7u9q4" data-form="182507973442012598"></div>
+            <script src="https://assets.mailerlite.com/js/universal.js"></script>
+            <script>
+                ML_Embed.load('182507913867167551', '182507973442012598');
+            </script>
+        </div>
+    </section>
+
+    <!-- Proof Assets (Bottom: Fear/Urgency) -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-assets">
+                <p><strong>Based on behavioral neuroscience research</strong> on reward system adaptation and dopamine receptor sensitivity. Your reward system is just desensitized from constant stimulation. The protocol recalibrates it.</p>
+                <p>The average person checks their phone <strong>96 times per day</strong> (Asurion, 2023)âfragmenting attention and destroying deep work capacity. You're not alone in this struggle.</p>
+                <p><strong>30-Day Focus Guarantee:</strong> Complete the 7-day challenge and if you don't experience a measurable increase in focus and clarity, we'll support you further at no cost. Zero risk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Dopamine Reset. Built for people who want clarity, not guilt.</p>
+        </div>
+    </footer>
+
+    <!-- Redirect Script: MailerLite success â thankyou.html -->
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'success') {
+                // Redirect to thank you page after form submission
+                setTimeout(function() {
+                    window.location.href = '/thankyou.html';
+                }, 500);
+            }
+        });
+    </script>
 </body>
 </html>
