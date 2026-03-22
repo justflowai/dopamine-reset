@@ -1,8 +1,10 @@
 {
-  "name": "dopamine-reset",
   "version": 2,
-  "buildCommand": "echo 'Static site, no build required'",
-  "outputDirectory": "./",
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 10
+    }
+  },
   "headers": [
     {
       "source": "/(.*)",
