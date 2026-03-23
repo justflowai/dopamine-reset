@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thank you! Your free 7-day phone detox challenge is on the way. Unlock the complete 30-day Focus OS system for just $37—available for the next 24 hours only.">
+    <meta name="description" content="Thank you! Your free 7-day phone detox challenge is on the way. Unlock the complete 30-day Focus OS system for just $37âavailable for the next 24 hours only.">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph -->
@@ -194,7 +194,7 @@
         }
 
         .included-list li:before {
-            content: "✓";
+            content: "â";
             position: absolute;
             left: 0;
             color: #00E5CC;
@@ -412,7 +412,7 @@
     <!-- Confirmation Message -->
     <section class="confirmation">
         <div class="container">
-            <div class="checkmark">✓</div>
+            <div class="checkmark">â</div>
             <h1>You're In! Your Free Challenge Awaits</h1>
             <p>Check your email (including spam folder) in the next 2 minutes.</p>
             <p class="subtext">Look for "Your 7-Day Phone Detox Challenge" from Dopamine Reset</p>
@@ -428,15 +428,32 @@
             </div>
             <script>
             (function(){
-                var key = 'dr_oto_start';
-                var start = localStorage.getItem(key);
-                if(!start){start=Date.now();localStorage.setItem(key,start);}
+                var key='dr_oto_start', start;
+                try { start = localStorage.getItem(key); }
+                catch(e) { var m = document.cookie.match(/dr_oto_start=(\d+)/); start = m ? m[1] : null; }
+                if(!start){
+                    start = Date.now();
+                    try { localStorage.setItem(key, start); }
+                    catch(e) { document.cookie = key+'='+start+';max-age=86400;path=/'; }
+                }
                 var end = parseInt(start) + 24*60*60*1000;
+                var timerEl = document.getElementById('timer-display');
+                var offerCard = document.querySelector('.offer-card');
+                var ctaBtn = document.querySelector('.offer-card .cta-button');
                 function update(){
                     var diff = end - Date.now();
-                    if(diff<=0){document.getElementById('timer-display').textContent='EXPIRED';return;}
+                    if(diff<=0){
+                        timerEl.textContent='EXPIRED';
+                        if(offerCard) offerCard.style.opacity='0.5';
+                        if(ctaBtn){
+                            ctaBtn.style.pointerEvents='none';
+                            ctaBtn.style.opacity='0.4';
+                            ctaBtn.textContent='This Offer Has Expired';
+                        }
+                        return;
+                    }
                     var h=Math.floor(diff/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
-                    document.getElementById('timer-display').textContent=
+                    timerEl.textContent=
                         String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
                     requestAnimationFrame(update);
                 }
@@ -466,16 +483,16 @@
                 <div class="included-list">
                     <h3>What You Get:</h3>
                     <ul>
-                        <li>Complete 30-day protocol — Days 1-30 with daily neuroscience breakdowns</li>
-                        <li>Days 4-7 Rewiring Phase (locked in the free guide — unlocked here)</li>
+                        <li>Complete 30-day protocol â Days 1-30 with daily neuroscience breakdowns</li>
+                        <li>Days 4-7 Rewiring Phase (locked in the free guide â unlocked here)</li>
                         <li>Days 8-30 Consolidation + Resilience Protocol (the part that makes it permanent)</li>
-                        <li>Focus Recovery Framework — your emergency toolkit for high-craving moments</li>
+                        <li>Focus Recovery Framework â your emergency toolkit for high-craving moments</li>
                         <li>Stimulus Audit Toolkit + Habit Replacement Library (50+ swap alternatives)</li>
                         <li>Weekly review templates + progress tracking worksheets</li>
                     </ul>
                 </div>
 
-                <a href="https://buy.stripe.com/dR6aFG6n16VscOkcMM" class="cta-button">
+                <a href="https://buy.stripe.com/aFa4gs3nfeqQ2DR1WWbsc05" class="cta-button">
                     Unlock the Full Focus OS System Now
                 </a>
 
