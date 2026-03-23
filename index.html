@@ -21,7 +21,7 @@
     <meta name="twitter:description" content="Free protocol to reset attention and eliminate compulsive phone checking. Science-backed system.">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230D4F4F' width='100' height='100'/><text x='50' y='65' font-size='60' fill='%2300E5CC' text-anchor='middle' font-weight='bold' font-family='Arial'>â</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230D4F4F' width='100' height='100'/><text x='50' y='65' font-size='60' fill='%2300E5CC' text-anchor='middle' font-weight='bold' font-family='Arial'>%E2%88%9E</text></svg>">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +47,7 @@
           "name": "What if I've tried phone detoxes before and failed?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "This isn't willpower-based. The protocol works by resetting your reward system baseline using behavioral neuroscience principlesânot motivation. That's why it works even if willpower has failed you before."
+            "text": "This isn't willpower-based. The protocol works by resetting your reward system baseline using behavioral neuroscience principles&mdash;not motivation. That's why it works even if willpower has failed you before."
           }
         },
         {
@@ -396,7 +396,7 @@
         </div>
     </section>
 
-    <!-- Social Proof (Early â before form for trust) -->
+    <!-- Social Proof (Early &mdash; before form for trust) -->
     <section class="social-proof">
         <div class="container">
             <div class="proof-line">
@@ -445,7 +445,10 @@
             <div class="ml-form-embed" data-account="182507913867167551:p2i1j7u9q4" data-form="182507973442012598"></div>
             <script src="https://assets.mailerlite.com/js/universal.js"></script>
             <script>
-                ML_Embed.load('182507913867167551', '182507973442012598');
+                (function(){
+                    function init(){if(typeof ML_Embed!=="undefined"){ML_Embed.load("182507913867167551","182507973442012598")}else{setTimeout(init,200)}}
+                    init();
+                })();
             </script>
         </div>
     </section>
@@ -468,7 +471,7 @@
         </div>
     </footer>
 
-    <!-- Redirect Script: MailerLite success â thankyou.html -->
+    <!-- Redirect Script: MailerLite success -> thankyou.html -->
     <script>
         window.addEventListener('message', function(event) {
             if (event.data.type === 'success') {
