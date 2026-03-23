@@ -207,7 +207,7 @@
         }
 
         /* MailerLite Embed */
-        .ml-form-embed {
+        .ml-embedded {
             margin: 0 auto;
         }
 
@@ -442,13 +442,10 @@
             <p>Enter your email below. You'll get immediate access to the 3-day foundation protocol + progress tracker.</p>
 
             <!-- MailerLite Embed -->
-            <div class="ml-form-embed" data-account="182507913867167551:p2i1j7u9q4" data-form="182507973442012598"></div>
+            <div class="ml-embedded" data-form="182507973442012598"></div>
             <script src="https://assets.mailerlite.com/js/universal.js"></script>
             <script>
-                (function(){
-                    function init(){if(typeof ML_Embed!=="undefined"){ML_Embed.load("182507913867167551","182507973442012598")}else{setTimeout(init,200)}}
-                    init();
-                })();
+                ml('account', '182507913867167551');
             </script>
         </div>
     </section>
