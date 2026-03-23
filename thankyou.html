@@ -438,12 +438,12 @@
                 }
                 var end = parseInt(start) + 24*60*60*1000;
                 var timerEl = document.getElementById('timer-display');
-                var offerCard = document.querySelector('.offer-card');
-                var ctaBtn = document.querySelector('.offer-card .cta-button');
                 function update(){
                     var diff = end - Date.now();
                     if(diff<=0){
                         timerEl.textContent='EXPIRED';
+                        var offerCard = document.querySelector('.offer-card');
+                        var ctaBtn = document.querySelector('.offer-card .cta-button');
                         if(offerCard) offerCard.style.opacity='0.5';
                         if(ctaBtn){
                             ctaBtn.style.pointerEvents='none';
@@ -457,7 +457,11 @@
                         String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
                     requestAnimationFrame(update);
                 }
-                update();
+                if(document.readyState === 'loading'){
+                    document.addEventListener('DOMContentLoaded', update);
+                } else {
+                    update();
+                }
             })();
             </script>
 
